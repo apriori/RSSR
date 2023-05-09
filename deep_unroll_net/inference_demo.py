@@ -127,7 +127,7 @@ class Demo(Generic_train_test):
                 print('saved', self.opts.results_dir, seq+'_pred_m.png')
                 
 
-                save_flow = False
+#                save_flow = False
                 if save_flow == True:
                     flow = pred_flow[2]
                     flow = flow.cpu().numpy().transpose(0,2,3,1)[0]

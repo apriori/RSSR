@@ -212,7 +212,7 @@ class Demo(Generic_train_test):
         mask_inv = cv2.morphologyEx(mask_inv, cv2.MORPH_OPEN, kernel)
         
         
-        _, contours, hierarchy = cv2.findContours(mask_inv, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        contours, hierarchy = cv2.findContours(mask_inv, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         
         index=0
         c_point=0
